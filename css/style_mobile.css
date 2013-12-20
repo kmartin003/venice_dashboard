@@ -1,0 +1,303 @@
+html, body {margin: 0; padding: 0; }
+body { background-color: #aaaaaa; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+table {   border-collapse:collapse; }
+td { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; margin: 0; color: #333; }
+a, a:visited { text-decoration: none; color: #005  !IMPORTANT; }
+a:hover, a:active { text-decoration: underline; color: #00a !IMPORTANT; }
+#omap { width: 100%; height: 100%; }
+#gmap { width: 100%; height: 100%; }
+#bmap { width: 100%; height: 100%; }
+
+	.draggable { width: 250px; height: 200px; padding: 10px; float: left; margin: 0; font-size: .9em; }
+	.ui-widget-header p, .ui-widget-content p { margin: 0; }
+
+#panel
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0;
+	
+}
+#headerbar
+{
+	background-color: #e6e6e6;
+	height: 100px;
+	width: 100%;
+	border-bottom: 1px solid #bbb;
+
+}
+		
+#location_name, #location_name a, #location_name a:hover, #location_name a:active
+{
+	margin: 0 23px;
+	font-size: 80px;
+	color: #999;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#location_latlon
+{
+	font-size: 20px;
+	color: #999;
+	padding-bottom: 12px;
+
+}
+
+#clock, #welcomeclock
+{
+	float: right;
+	margin: 10px 10px 0 10px;
+	font-size: 40px;
+	color: #999;
+}
+
+#links
+{
+	float: right;
+	margin: 0 10px;
+	font-size: 20px;
+	color: #999;
+}
+
+
+#optionsbar
+{
+	background-color: #f8f8f8;
+	width: 100%;
+	border-top:  2px solid #ddd;
+	position: absolute;
+	bottom: 0;
+}
+
+#options
+{
+	padding: 10px;
+}
+	
+#widgets
+{
+	background-color: #eee;
+	border-top:  2px solid #ddd;
+}
+
+#panelbg
+{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background-color: #eee;
+}
+
+#refreshMessage
+{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background-color: #000;
+	display: none;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+
+#refreshMessageText
+{
+	position: relative;
+	top: 300px;
+	width: 1024px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	color: #fff;
+}
+
+#logos
+{
+	background-color: #e6e6e6;
+	position: fixed;
+	width: 1180px;
+	border-top:  1px solid #bbb;
+	bottom: 0;
+	height: 30px;
+	padding: 10px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: right;
+	z-index:2;
+}
+
+.alert, .alert a { background-color: #aa0000; padding: 2px; color: #ffffff; font-size: 10px; vertical-align: middle; font-weight: bold; }
+
+#welcome
+{
+	background-color: #000;
+	opacity: 0.8;
+	filter:alpha(80);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	z-index: 1100;
+	color: #999;
+}
+
+#welcometitle
+{
+	font-size: 160px;
+	color: #999;
+	font-weight: bold;
+	padding: 50px 50px 0 50px;
+}
+
+#welcomecontent
+{
+	padding: 10px 60px;
+	font-size: 24px;
+}
+
+#welcome_location_latlon
+{
+	font-size: 40px;
+	color: #999;
+	padding-bottom: 10px;
+}
+
+#themap
+{
+	position: absolute; 
+	width: 100%; 
+	top: 100px;
+	bottom: 0;
+	background-color: #444;
+}
+
+#keyItems
+{
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	z-index: 1000;
+}
+
+.keyItem
+{
+	padding: 3px 8px;
+	color: #000000;
+	background-color: #DDDDDD;
+	font-size: 12px;
+	font-weight: bold;
+	opacity: 0.7;
+	border: 2px solid #000000;
+}
+
+.keyItem a, .keyItem a:visited
+{
+	color: #000000 !IMPORTANT;
+}
+
+#selectedItemInformation
+{
+	position: absolute;
+	bottom: 50px;
+	right: 0;
+	max-width: 352px;
+	padding: 5px;
+	color: #000000;
+	background-color: #DDDDDD;
+	z-index: 5000;
+	font-weight: bold;	
+	opacity: 0.7;
+	border: 5px solid #FFFF00;
+	display: none;
+}
+
+#draggable3 { height: 90px; }
+#draggable5 { height: 320px; }
+#draggable6 { height: 335px; }
+#draggable7 { height: 335px; }
+#draggable8 { height: 200px; }
+#draggable9 { height: 400px; }
+#draggable11 { height: 250px; }
+
+.bTo
+{
+	font-size: 20px;
+	padding-left: 10px;
+}
+
+.draggabletitle
+{
+	font-size: 14px;
+	font-variant: small-caps;
+	float: left;
+	padding-bottom: 5px;
+font-weight:bold;
+}
+
+.draggabletimer
+{
+	font-size: 9px;
+	color: #fff;
+	float: right;
+	padding: 0 3px;
+	margin: 2px 3px;
+	background-color: #0a0;
+}
+
+.draggablecontent
+{
+	clear: left;
+}
+
+.draggableinfo
+{
+	display: none;
+	float: right;
+}
+
+.numberpanel
+{
+	width: 100%; 
+	padding: 5px 0; 
+	text-align: center; 
+	vertical-align: middle;
+}
+
+.numberheadline
+{
+	font-size: 34px; 
+	font-weight: bold; 
+	color: #ffffff;
+}
+
+.numberinfo
+{
+	font-size: 12px; 
+	font-weight: bold; 
+	color: #ffffff;
+}
+
+.weathertable td { font-size: 12px; padding: 2px 5px; text-align: center; }
+
+.weathertable th { padding: 2px 5px; background-color: #fff; text-align: center; font-variant: small-caps; font-size: 11px;  }
+
+.close {
+	display:none; 
+	float:right; 
+	padding:5px;
+}

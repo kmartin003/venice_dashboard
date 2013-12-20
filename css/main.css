@@ -1,0 +1,15 @@
+#actv_announcement, #fog_notice {
+	margin-bottom:10px; 
+	width: 100%; 
+	color: #ffffff; 
+	font-weight: bold; 
+	background-color: #c13e3e; 
+	padding: 5px 0; 
+	text-align:center;
+}
+
+.close {
+	display:none; 
+	float:right; 
+	padding:5px;
+}
