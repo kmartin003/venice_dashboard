@@ -26,7 +26,7 @@ def readStrings(url):
 					end = i+1
 					objects.append(sitestr[start:end])
 	except Exception as e:
-		print e
+		print (e)
 	return objects
 
 def strToFlight(string):
